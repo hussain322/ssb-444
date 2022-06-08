@@ -1,17 +1,20 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-}
+/* font-family: 'Lato', sans-serif; */
+
+/* ***************** */
+/* HEADER PART */
+/* ***************** */
 
 header{
 
-width: 85%;
+width: 80%;
 
-margin: 30px auto;
+margin: 28px auto;
 
 display: flex;
 
@@ -19,41 +22,71 @@ justify-content: space-between;
 
 align-items: center;
 }
+
+/* Logo part */
+
 .logo{
 
+width: 20%;
 }
-.logo img{
+.logo img {
     
 }
+
+/* Menu part */
+
 .menu{
 
+width: 40%;
 }
-.menu a{
+.menu ul{
+    
+list-style: none;
+    
+display: flex;
+    
+justify-content: end;
+}
+
+.menu ul li {
+    
+margin-left: 40px;
+}
+
+.menu ul li a:hover{
+    background-color: #15a4fa;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.menu ul li a {
     
 text-decoration: none;
-    
-text-transform: capitalize;
-    
-color: darkgrey;
-    
-font-size: 20px;
-transition: .3s all ease-in-out;
+transition: 0.5s all ease-in-out;
+text-transform: uppercase;
+display: block;
+color: #2d3950;
+font-size: 16px;
+font-family: 'Lato', sans-serif;
+font-weight: 600;
+padding: 5px 15px;
 }
 
-.menu a:hover{
-    color: black;
-    
-}
+/* ***************** */
+/* BANNER PART */
+/* ***************** */
 
 .banner{
-    background: linear-gradient(hsl(224, 12%, 18%, .9), hsl(224, 12%, 18%, 0.9) ), url(../images/banner_bg.jpg);
-    min-height: 86vh;
+    background-image: url(../images/header-bg.png);
+    min-height: 87vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     position: relative;
 }
+
 .banner_content{
+
+width: 33%;
 
 text-align: center;
 
@@ -65,300 +98,245 @@ left: 50%;
 
 transform: translate(-50%, -50%);
 }
-.banner_content h1{
+.banner_content h1 {
     
-font-size: 50px;
+text-transform: uppercase;
+    
+color: #ffffff;
+    
+font-size: 90px;
+    
+padding-bottom: 15px;
+font-family: 'Lato', sans-serif;
+}
+.banner_content span {
+    
+display: block;
+    
+height: 2px;
+    
+width: 100%;
+    
+background-color: #15a4fa;
+}
+.banner_content p {
     
 color: #fff;
     
-font-weight: normal;
-}.banner_content p{
+margin: 20px 0 35px 0;
     
-color: #fff;
-    
-font-size: 20px;
-    
-padding: 20px 0 65px 0;
+font-family: 'Lato', sans-serif;
 }
 .banner_content button{
-    border: 1px solid #fff;
-    padding: 20px 50px;
-    border-radius: 5px;
-    text-transform: capitalize;
-    background-color: #fb6e52;
-    color: #fff;
-    cursor: pointer;
+    
+background: transparent;
+    
+border: 1px solid #15a4fa;
+    
+padding: 15px 30px;
+    
+color: #fff;
+    
+cursor: pointer;
+    
+border-radius: 3px;
+    
+transition: 0.5s all ease-in-out;
+    
+font-family: 'Lato', sans-serif;
 }
 
-.icon_section{
-
-width: 75%;
-
-margin: 50px auto;
-
-text-align: center;
-
-display: flex;
-
-justify-content: space-between;
+.banner_content button:hover{
+    background-color: #15a4fa;
 }
 
 .icon{
     
-font-size: 35px;
+position: absolute;
     
-background: #fb6e52;
+bottom: 70px;
     
-height: 55px;
+left: 50%;
     
-width: 55px;
-    
-border-radius: 50%;
-    
-padding: 20px 15px 0 15px;
+transform: translate(-50%, 0px);
     
 color: #fff;
-}
-
-.web_design{
-    width: 20%;
-
-}
-
-.web_design h3{
-
-color: #292c34;
-
-text-transform: capitalize;
-
-padding: 20px 0;
-}
-
-.web_design p{
     
-color: #97999b;
+font-size: 20px;
+
+animation: updown 1s linear infinite;
+
+animation-direction: alternate;
 }
 
-.graphic_design{
-    width: 20%;
+@keyframes updown{
+    0%{
+        bottom: 70px;
+    }
+    100%{
+        bottom: 40px;
+    }
 }
 
-.graphic_design h3{
-    
-color: #292c34;
-;
-;
-    
-text-transform: capitalize;
-    
-padding: 20px 0;
-}
-.graphic_design p{
-    
-color: #97999b;
-}
-.photography{
-    width: 20%;
+
+.simple_section{
+
+background: #f6f9f9;
+
+width: 100%;
 }
 
-.photography h3{
+.simple_content{
 
-text-transform: capitalize;
-
-color: #292c34;
-
-padding: 20px 0;
-}
-.photography p{
-    
-color: #97999b;
-}
-
-.paragraph{
-
-width: 44%;
+width: 80%;
 
 margin: auto;
+
+padding: 50px 0 70px 0;
 
 text-align: center;
-
-padding: 20px 0;
 }
 
-.paragraph p{
+.simple_content h2 {
     
-font-size: 30px;
+padding: 10px 0 20px 0;
     
-font-style: italic;
-
-color: #fb6e52;
+font-size: 40px;
+    
+font-weight: normal;
 }
 
-.image_content{
+.simple_content p {color: #999999;line-height: 25px;}
 
-width: 75%;
+.feature_section{width: 80%;margin: 50px auto;display: flex;justify-content: space-between;}
 
-margin: auto;
+.feature_item{
+
+width: 30%;
+
+text-align: center;
+}
+
+.feature_icon_box{
+
+height: 80px;
+
+width: 80px;
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,5fc3ff+50,5fc3ff+100 */
+background: #48baff; /* Old browsers */
+background: -moz-linear-gradient(left,  #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+
 
 display: flex;
 
-justify-content: space-between;
+justify-content: center;
 
-padding: 50px;
+align-items: center;
 
-text-align: center;
+font-size: 35px;
+
+color: #fff;
+
+margin: auto;
 }
 
-.cool_image{
+.feature_item h3 {
+
+padding: 20px 0 15px 0;
+
+font-size: 22px;
+
+color: #2d3950;
+
+font-weight: normal;
+}
+
+.feature_item p {
+ color: #999999;
+ font-size: 15px;
+ line-height: 25px;
+}
+
+.gallery_section{
+
+background: #f6f9f9;
+
+width: 100%;
+
+padding: 80px 0;
+}
+
+.gallery_content{
+
+width: 80%;
+
+margin: auto;
+}
+
+.gallery_heading{
+
+text-align: center;
+
+margin-bottom: 70px;
+}
+.gallery_heading h2 {
+    color: #2d3950;
+    font-size: 41px;
+    font-weight: normal;
+}
+
+.gallery_heading p {
+    
+margin: 10px 0;
+color: #999999;
+font-size: 15px;
+}
+
+.gallery{
+
+display: flex;
+
+flex-wrap: wrap;
+
+justify-content: space-between;
+}
+
+.gallery_item{
 
 width: 32%;
+
+margin-bottom: 20px;
+
+position: relative;
 }
 
-.cool_image img {
-
-width: 100%;
-}
-
-.cool_image h3{
-
-text-transform: capitalize;
-
-padding: 20px 0;
-
-color: #292c34;
-}
-
-.cool_image p{
-    color: #97999b;
-    text-transform: capitalize;
-}
-
-.blog{
-
-background: #f9f9f9;
-
-width: 100%;
-
-margin: 30px 0;
-}
-
-.blog h2{
-
-text-transform: uppercase;
-
-text-align: center;
-
-padding: 50px 0;
-
-font-size: 30px;
-}
-
-.blog_content{
-    
-width: 75%;
-    
-margin: auto;
-    
-display: flex;
-    
-justify-content: space-between;
-}
-
-.left{
-
-width: 48%;
-}
-.left img{
+.gallery_item img {
     
 width: 100%;
 }
-.left h3 {
-    
-text-transform: capitalize;
-    
-padding: 20px 0;
 
-color: #fb6e52;
-}
-.left p {
-    color: #97999b;
-}
-.right{
+.gallery_item::after{
 
-width: 48%;
-}
-.right img{
-    
-width: 100%;
-}
-.right h3 {
-    
-text-transform: capitalize;
-    
-padding: 20px 0;
-
-color: #fb6e52;
-}
-.right p {
-    color: #97999b;
-}
-
-footer{
-    background: #292c34;
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
     width: 100%;
-    /* margin: 20px 0; */
-}
-.footer_content{
+    height: 0%;
+    background: #1c9bea;
+    opacity: 0.8;
+    transition: 0.5s all ease-in-out;
 
-width: 75%;
-
-padding: 20px 0;
-
-margin: auto;
-
-display: flex;
-
-justify-content: space-between;
-}
-.footer_logo{
-
-width: 18%;
-
-display: flex;
-
-justify-content: space-between;
-
-align-items: center;
-}
-.footer_logo img {
-    
-}
-.footer_logo p {
-    
-text-transform: capitalize;
-    
-color: #797c82;
 }
 
-.social_icon{
-    width: 15%;
-    margin-top: 15px;
-}
-.social_icon ul {
-    
-list-style: none;
-    
-display: flex;
-    
-justify-content: space-between;
-    
-align-items: center;
-}
-.social_icon li {
-     
-}
-.social_icon a {
-    color: #fff;
+.gallery_item:hover::after{
+    height: 100%;
 }
 
-.menu h4{font-weight: 300;}
+
+
+
